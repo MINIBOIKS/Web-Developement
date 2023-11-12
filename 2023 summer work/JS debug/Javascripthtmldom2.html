@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript HTML DOM</h2>
+    <p>First Paragraph.</p>
+    <p>Second Paragraph</p>
+
+    <p id="demo"></p>
+    <script>
+        let combinedText=""
+        const element = document.getElementsByTagName("p");
+        document.write(element[0].innerHTML)
+        for (let i=0; i<element.lenght; i++)
+        {
+            combinedText = combinedText+"     "+element[i].innerHTML;
+        }
+
+        document.getElementById("demo").innerHTML ="******"+ combinedText;
+    </script>
+</body>
+</html>

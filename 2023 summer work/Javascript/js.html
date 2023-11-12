@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #changeColorButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the button to change the background color!‹/h1› 
+        <button id="changeColorButton">Change Color</button>
+        <script>
+        // Select the button element by its ID
+        const button = document. getElementById("changeColorButton");
+        // Function to change the background color
+        function changeBackgroundColor () {
+        // Generate a random color in hexadecimal format
+        const randomColor = '#' + Math. floor (Math. random () *16777215).toString(16)
+        // Set the background color of the body to the random color
+        document.body.style.backgroundColor = randomColor;
+        }
+        // Add a click event listener to the button
+        button.addEventListener('click', changeBackgroundColor);
+        </script>
+</body>
+</html>    

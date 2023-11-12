@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colorful-div {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>click the div to change its background color!</h1> 
+    <div class="colorful-div">click Me</div>
+
+
+        <script>
+        // Select the div element by its class
+        const divElement = document. querySelector(' colorful-div');
+
+        // Function to change the background color
+        function changeBackgroundColor () {
+        // Generate a random color in hexadecimal format const randomColor =
+        '#' + Math. floor (Math. random () *16777215). toString (16) ;
+
+        // Set the background color of the div to the random color
+        divElement.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>

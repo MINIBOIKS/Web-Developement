@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       
+     let firstnumber =20;
+     let secondnumber= 50;
+
+     let swap =(first,second)=>{
+
+        first = first + second;
+        second = first - second;
+        first = first - second;
+
+        document.write(`<br> After Swaping First number value is ${first} and Second number is ${second} `);
+
+     }
+
+     document.write(` First number value is ${firstnumber} and Second number is ${secondnumber} `);
+      
+     swap(firstnumber,secondnumber);
+     
+
+                 
+
+     
+       
+    </script>
+</body>
+</html>

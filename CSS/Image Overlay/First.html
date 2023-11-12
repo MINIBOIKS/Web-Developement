@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image overlay </title>
+    <style>
+        * {
+           box-sizing: border-box;
+        }
+        .container {
+             left: 40%;
+             position: relative;
+             width: 50%;
+             max-width: 200px;
+        }
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            background: rgb(0, 0, 0);
+            background: rgb(232, 142, 244);
+            /*Pink see through*/
+            color:#f1f1f1;
+            width: 100%;
+            transition: .5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .container:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image overlay title</h1>
+    <div class="container">
+    <img src="/Users/kavya/Desktop/HTML Kavya/Kavya Html /Image overlay/Drinks.jpeg" alt="">
+    <div class="overlay">Drinks</div>
+</div>
+</body>
+</html>

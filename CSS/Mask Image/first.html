@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask image</title>
+
+<style>
+    *{
+        background-color: black;
+    }
+
+    .hero{
+        position: relative;
+    }
+
+    .hero-title{
+        color: hsl(224, 46%, 65%);
+        font-size: clamp(2.5rem, 10vw + 0.5, 6rem);
+        line-height: 1;
+        font-weight: 900;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .hero-image{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+
+        width: 100%;
+        height: 50vh;
+
+        object-fit: cover;
+        -webkit-mask-image: linear-gradient(
+            rgb(0 0 0 / 1)
+            rgb(0 0 0 / 0.5)  70%
+            rgb(0 0 0 / 0)
+        );
+         mask-image:linear-gradient(
+            rgb(0 0 0 / 1)
+            rgb(0 0 0 / 0.5)  70%
+            rgb(0 0 0 / 0)
+         )
+    }
+
+    p{
+        color: white;
+    }
+</style>
+
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <img src="./Tiger.jpeg" alt="" class="hero-image">
+            <h1 class="hero-title">A really interesting title</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2 class="section-title"> Lorem ipsum, dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deleniti repellendus eligendi, sit
+                repudiandae possimus. Asperiores accusamus error non veniam tempora accusantium sed, illum nobis ad.
+                Quod porro fuga amet?</p>
+        </div>
+    </main>
+
+</body>
+
+</html>

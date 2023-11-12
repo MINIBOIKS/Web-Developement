@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML Relative position</title>
+    <style>
+        .Relativebox1 {
+             position: relative;
+             right: 0px;
+             top: 0px;
+            border-color: khaki;
+            background-color: rgb(255, 101, 152);
+            margin-bottom: 30px;
+           
+        }
+
+       
+        div{
+            height: 120px;
+            width: 120px;
+            display: inline-block;
+        }
+
+
+        .Relativebox2 {
+            
+          /* position: absolute;*/
+            position:relative;
+            left: 50px;
+            top: 0px;
+            margin-bottom: 10px;
+            background-color: rgb(60, 255, 141);
+            
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="Relativebox1"> 
+        <h1>This is Relative Box 1</h1>
+    </div>
+        <div class="Relativebox2">
+         <h1>This is Relative Box 2.</h1>
+        
+        </div>
+      
+    
+</body>
+
+</html>

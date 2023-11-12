@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky</title>
+    <Style>
+        *{
+            box-sizing: border-box;
+        }
+
+        dl > div {
+                background: #FFF;
+                padding: 24px 000;
+        }
+
+        dt{
+            background: #b8c1c8;
+            border-bottom: 1px solid #989ea4;
+            border-top: 1px solid #717d85;
+            color: #FFF; 
+            font: bold 18px/21px helvectica, Arial, sans-serif;
+            margin: 0;
+            padding: 2px 0 0 12px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: -1px;
+        }
+
+        dd {
+             font: bold 20px/45px Helvetica, Arial, sans-serif;
+             margin: 0;
+             padding: 0 0 0 12px;
+             white-space: nowrap;
+}
+
+        dd + dd {
+            border-top: 1px solid #CCC;
+}
+
+    </Style>
+</head>
+<body>
+    <h1>Sticky</h1>
+
+    <dl>
+      <div>
+        <dt>A</dt>
+        <dd>Andrew W.K.</dd>
+        <dd>Apparat</dd>
+        <dd>Arcade Fire</dd>
+        <dd>At the Drive-In</dd>
+        <dd>Aziz Ansari</dd>
+      </div>
+      <div>
+        <dt>C</dt>
+        <dd>Chromeo</dd>
+        <dd>Common</dd>
+        <dd>Converge</dd>
+        <dd>Crystal Castles</dd>
+        <dd>Cursive</dd>
+      </div>
+      <div>
+        <dt>E</dt>
+        <dd>Explosions In The Sky</dd>
+      </div>
+      <div>
+        <dt>T</dt>
+        <dd>Ted Leo &amp; the Pharmacists</dd>
+        <dd>T-pain</dd>
+        <dd>Thrice</dd>
+        <dd>Tv on the radio</dd>
+        <dd>Two Gallants</dd>
+      </div>
+      </dl>
+
+</body>
+</html>

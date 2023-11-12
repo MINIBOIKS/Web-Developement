@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <h1>Learning String Temlpate</h1>
+    <h3 id="add"></h3>
+    <script>
+        let x=10;
+        let y=20;
+        let add= x+y;
+        document.getElementById("add").innerHTML="X , Y Total is" + add;
+        document.write("X, Y Total is" + add);
+        console.log("X, Y Total is" + add);
+        document.write(`<br> X , Y Total is ${add+20}`);
+    </script>
+</body>
+</html>

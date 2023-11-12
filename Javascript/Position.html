@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .static {
+            position: static;
+            border: 3px solid #95ff00;
+            /* -important note- static is the default settings of a browser */
+            top: 300px;
+        }
+
+        .relative {
+            position: relative;
+            border: 3px solid #0000FF;
+           top: 0px;
+           /* -important note- no matter what happens and how much you move it, it will always move from its original position */ 
+        }
+        .absolute {
+            position: absolute;
+            border: 3px solid #ff0000;
+           top: 0px;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Static and Relative</h1>
+
+    <div class="static">
+       position: static;
+    </div>
+    <div class="relative">
+        position: relative;
+    </div>
+    <div class="absolute">
+         position: absolute;
+    </div>
+</body>
+
+</html>

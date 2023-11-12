@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Card Example</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background: linear-gradient(90deg, rgb(255, 143, 143) 0%, rgb(255, 230, 2) 100%);
+            /*background: linear-gradient(225deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 55%, hsla(270, 7%, 16%, 1) 100%, hsla(300, 1%, 14%, 1) 100%);*/
+        }
+
+        .card-container {
+            height: 100vh;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+            flex-wrap: wrap;
+            margin-top: 50px;
+            /* background-color: #000;*/
+
+        }
+
+        .card {
+            width: 250px;
+            height: auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .card .card-image {
+            height: 150px;
+            width: 150px;
+            border: 5px double #022a3c;
+            border-radius: 50%;
+            background-position: center center;
+            background-size: cover;
+            margin: auto;
+
+        }
+
+        .card .card-title {
+            padding: 20px 10px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            text-shadow: 1px 0px 2px #262654;
+            text-align: center;
+        }
+
+        .card:nth-child(1) .card-image {
+            background-image: url(./coding.jpg);
+        }
+
+        .card:nth-child(2) .card-image {
+            background-image: url(./cooking.jpg)
+        }
+
+        .card:nth-child(3) .card-image {
+            background-image: url(./cycling.jpg);
+        }
+
+        .card:hover {
+            background: #db8b8b;
+            color: #fff;
+            box-shadow: 0px 0px 11px 5px #000;
+        }
+
+        .card .card-text {
+            line-height: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <!--CARD 1-->
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-title">Coding</div>
+            <div class="card-text">
+                Coding is a list of step-by-step instructions that get computers to do what you want them to do. Coding
+                makes it possible for us to create computer software, games, apps and websites. Coders, or programmers,
+                are people who write the programmes behind everything we see and do on a computer.
+            </div>
+        </div>
+        <!--CARD 2-->
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-title">Cooking</div>
+            <div class="card-text">
+                Cooking skills help people to meet nutrition guidelines in their daily nutrition supply. They allow
+                people to make healthier food choices. It is, therefore, important to teach children and teenagers how
+                to cook and to encourage them to develop their cooking skills.
+            </div>
+        </div>
+        <!--CARD 3-->
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-title">Cycling</div>
+            <div class="card-text">
+
+                Cycling, use of a bicycle for sport, recreation, or transportation. The sport of cycling consists of
+                professional and amateur races, which are held mostly in continental Europe, the United States, and
+                Asia. The recreational use of the bicycle is widespread around the world! 
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

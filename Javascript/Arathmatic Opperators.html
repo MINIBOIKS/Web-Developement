@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Arathmatic Opperators</title>
+</head>
+
+<body>
+  <h1>Learning Arathmatic Opperators</h1>
+  <p id="add"></p>
+  <p id="sub"></p>
+  <p id="mul"></p>
+  <p id="division"></p>
+  <p id="reminder"></p>
+  <p id="increment"></p>
+  <p id="decrement"></p>
+  <script>
+    var number1 = 20;
+    var number2 = 10;
+    var ans;
+    ans = number1 + number2;
+    document.getElementById("add").innerHTML = " Addition " + ans;
+    ans = number1 - number2;
+    document.getElementById("sub").innerHTML =" Subtraction " + ans; 
+    ans=number1 * number2;
+    document.getElementById("mul").innerHTML =" multiplication " + ans;
+    ans=number1 / number2;
+    document.getElementById("division").innerHTML =" division" + ans;
+    ans=number1 % number2;
+    document.getElementById("reminder").innerHTML =" reminder " + ans;
+    number1++; //number1=number1+1
+    document.getElementById("increment").innerHTML=" increment " + number1;
+    number2--; //number2=number2-1
+    document.getElementById("decrement").innerHTML=" decrement " + number2;
+
+  </script>
+</body>
+
+</html>

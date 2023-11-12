@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+
+<body>
+    <h1>Results</h1>
+    <p id="total"></p>
+    <p id="average"></p>
+    <p id="results"></p>
+
+    <script>
+        var math = 100;
+        var science = 100;
+        var language = 100;
+        var SocialStudies = 100;
+        var histories = 100;
+        var geography = 100;
+        var total;
+        var average;
+        total = math + science + language + SocialStudies + histories + geography;
+        document.getElementById("total").innerHTML = "<br>your total is" + total;
+        average = total / 6;
+        document.getElementById("average").innerHTML = "<br>your average is" + average;
+        if (average >= 90)
+            document.getElementById("results").innerHTML = "Your grade is A+";
+        else if (average < 90 && average >= 80)
+            document.getElementById("results").innerHTML = "your grade is A";
+        else if (average < 80 && average >= 70)
+            document.getElementById("results").innerHTML = "your grade is B";
+        else if (average < 70 && average >= 50)
+            document.getElementById("results").innerHTML = "your grade is C";
+        else if (average < 50 && average >= 40)
+            document.getElementById("results").innerHTML = "your grade is D";
+        else
+            document.getElementById("results").innerHTML = "You failed"
+
+
+
+
+    </script>
+</body>
+
+</html>

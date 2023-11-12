@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        colors = ["red","green",- "blue","yellow"];
+        var timer = window.setInterval(changeColor, 1000);
+        function changeColor() {
+            var n = Math.round(Math.Random() * 4);
+            document.body.style.backgroundColor = colors[n];
+        }
+    </script>
+</body>
+
+</html>

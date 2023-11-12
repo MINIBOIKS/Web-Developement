@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Dom</title>
+</head>
+<body>
+  <h1>Learning Dom</h1>  
+  <div>
+    <p id="greeting">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti eius deleniti fugit perferendis, provident ipsum fuga dolore, voluptatem laborum blanditiis repellat nulla commodi voluptates vero numquam modi! Ut, deleniti?</p>
+    <input type="button" onclick="display()" value="click"> 
+  </div>
+  <script>
+    function display(){
+        document.getElementById("greeting").innerHTML="Hello how are you?"
+    }
+  </script>
+</body>
+</html>

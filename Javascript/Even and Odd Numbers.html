@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even and Odd Numbers</title>
+</head>
+
+<body>
+    <h1>Even and Odd Numbers</h1>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <script>
+        var i;
+        var number1 = 2;
+        var ans1;
+        var ans2;
+        var ans3;
+        var ans4;
+        var ans5;
+        ans1 = number1 * 1;
+        document.getElementById("1").innerHTML = ans1;
+        ans2 = 2 * 2
+        document.getElementById("2").innerHTML = ans2;
+        ans3 = 2 * 3
+        document.getElementById("3").innerHTML = ans3;
+        ans4 = 2 * 4
+        document.getElementById("4").innerHTML = ans4;
+        ans5 = 2 * 5
+        document.getElementById("5").innerHTML = ans5;
+        
+        for(i=1;i<=10;i++)
+        {
+            if(i% 2==1)
+            document.write("<br> <br>"+i)
+        }
+    </script>
+</body>
+
+</html>

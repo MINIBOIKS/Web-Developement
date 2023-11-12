@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let number =382, reverse = 0;
+        while (number != 0) {
+        
+            console.log("Number " +number);
+            let remainder = number %10;
+            console.log(" Remainder "+remainder);
+            reverse = reverse * 10 + remainder;
+            number = Math.floor(number / 10);
+            console.log("Number after divide" + number);
+        }
+        document.write(reverse);
+
+    
+    </script>
+</body>
+</html>

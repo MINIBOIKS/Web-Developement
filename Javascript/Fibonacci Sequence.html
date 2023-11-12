@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series Javascript</title>
+</head>
+
+<body>
+    <h1>Fibonacci Series Javascript</h1>
+    <script>
+        var firstnum = 0;
+        var secondnum = 1;
+        var i;
+        for (i = 1; i < 20; i++) {
+            document.write(firstnum + "<br>");
+            var sum = firstnum + secondnum;
+            firstnum = secondnum;
+            secondnum = sum;
+        }
+    </script>
+</body>
+
+</html>

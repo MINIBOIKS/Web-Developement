@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate grading for school</title>
+</head>
+
+<body>
+    <h1>Calculate Grading</h1>
+    <br>
+
+    <script>
+
+        /* parseInt(prompt("Enter Name: "));
+         console.log()
+         parseInt(prompt("Enter Math Grade: "));
+         parseInt(prompt("Enter Science Grade: "));
+         parseInt(prompt("Enter Art Grade: "));
+         parseInt(prompt("Enter English Grade: "));
+         parseInt(prompt("Enter Social Studies Grade: "));*/
+        let fname, lname, grade;  //string input varaibles
+        let maths, science, english, art, socialstudies;  //interg  er /number input variable 
+        let avg, total;   // Dispaly/output number variable
+        let result;     //Display String variable;
+    
+
+        fname = prompt("Enter your first name");
+        lname = prompt("Enter your last name");
+        grade = prompt("Enter your grade");
+        console.log(`Entered full name is ${fname} ${lname} `);
+        // get number values
+
+        maths = prompt("Enter your maths marks");
+ // convert string to integer for calculating total and average
+
+        maths = parseInt(maths);
+ 
+        science = prompt("Enter your science marks");
+        science = parseInt(science);
+        
+        english = prompt("Enter your english marks");
+        english = parseInt(english);
+
+        art = prompt("Enter your art marks"); 
+        art = parseInt(art);
+
+        socialstudies = prompt("Enter your socialstudies marks");
+        socialstudies = parseInt(socialstudies);
+
+      total=maths+science+socialstudies+english+art;
+      document.write("Total is"+ total)
+        
+      avg=total/5;
+      document.write("<br>Average is" + avg)
+
+      /* above 90+ excellent 
+      from 89 to 75 Good
+      from 74 to 65 needs work
+      from 64 to 55 pass
+      54- fail */
+
+      if  (avg = 100- 90) {
+        console.log("Exellent");
+    } else if (avg = 89-75) {
+        console.log("Good");
+    } else if (avg = 74-65) { 
+        console.log("needs work");
+    } else if (avg = 64-55) {
+        console.log("pass");
+    } else (avg = 54-0) {
+        console.log("Fail");
+    }
+</body>
+
+</html>

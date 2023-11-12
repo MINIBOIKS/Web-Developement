@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*----------------Small Bird-------------------------------*/
+   /*-----------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --body: #0055ff; 
+    --mouth: #ae2727;
+    --feather: #cfad4f;
+    --beak-top: #e9db1a;
+    --leg: #ef8f00;
+    --leg2: #ef8f00;
+    --body-leg: #e3edf7;
+    --body-leg2: #e3edf7;
+
+    --body2: #3e48ff; 
+    --mouth2: #ae2727;
+    --feather2: #cfad4f;
+    --beak2-top: #e9db1a;
+    --leg3: #ef8f00;
+    --leg4: #ef8f00;
+    --body-leg3: #e3edf7;
+    --body-leg4: #e3edf7;
+}
+body {
+    background: var(--body-color);
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+ .body,  .mouth,  .feather,  .tail, .beak, .mouth::before, .mouth::after, .leg, .leg::after, .leg::before,.leg2, .leg2::after, .leg2::before {
+    position: absolute;
+}
+ .body,  .mouth, .feather, .beak, .mouth::before, .mouth::after  {
+    border-radius: 50%;
+}
+
+.body {
+    top: 26px;
+    left: 50px;
+    height: 180px;
+    width: 200px;
+    transform: rotate(-17deg);
+    background: linear-gradient(to bottom, transparent 0%, transparent 20%, var(--body) 20%);
+    z-index: 2;
+}
+
+.mouth {    
+    background:  var(--mouth);
+    top: 20px;
+    left: -175px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-17deg);
+    z-index: 5;
+    animation: animate-mouth 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-mouth {
+    100% {
+        left: 175px;
+    }
+}
+.mouth::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.mouth::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 30px;
+    left: 55px;
+    animation: animate-eye 1s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes animate-eye {
+    50% {
+        height: 5px;
+    }
+}
+
+
+.feather {
+    z-index: 4;
+    left: 44px;
+    top: -206px;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, transparent 0%, transparent 50%, var(--feather) 50%);
+    transform: rotate(-17deg);
+    animation: animate-feather 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-feather {
+    100% {
+        top: -6px;
+    }
+}
+
+.tail {
+    width: 150px;
+    height: 60px;
+    background-color: var(--mouth);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    top: 92px;
+    left: 324px;
+    transform: rotate(-17deg);
+    z-index: 3;
+    animation: animate-tail 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-tail {
+    100% {
+        left: -24px;
+    }
+}
+.beak {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(to bottom, var(--beak-top) 0%, var(--beak-top) 15%, transparent 15% );
+    left: 224px;
+    top: 240px;
+    z-index: -1;
+    transform: rotate(-17deg);
+    animation: animate-beak 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-beak {
+    100% {
+        top: 40px;
+    }
+}
+.leg {
+    background: var(--leg);
+    height: 50px;
+    width: 10px;
+    border-radius: 10px;
+    top: 515px;
+    left: 125px;
+    transform: rotate(-15deg);
+    z-index: 1;
+    animation: animate-leg 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-leg {
+    100% {
+        top: 215px;
+    }
+}
+.leg::before {
+    bottom: -8px;
+    content: "";
+    width: 40px;
+    height: 9px;
+    background: var(--leg);
+    border-radius: 10px;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+.leg::after {
+    top: -8px;
+    content: "";
+    width: 30px;
+    height: 9px;
+    background: var(--leg);
+    border-radius: 10px;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+.leg2 {
+    background: var(--leg);
+    height: 50px;
+    width: 10px;
+    border-radius: 10px;
+    top: 515px;
+    left: 125px;
+    transform: rotate(-15deg);
+    z-index: 1;
+    animation: animate-leg 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-leg2 {
+    100% {
+        top: 215px;
+    }
+}
+.leg2::before {
+    bottom: 20px;
+    content: "";
+    width: 40px;
+    height: 9px;
+    background: var(--leg);
+    border-radius: 10px;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+.leg2::after {
+    top: -8px;
+    content: "";
+    width: 30px;
+    height: 9px;
+    background: var(--leg);
+    border-radius: 10px;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+
+/*----------------BIG BIRD-------------------------------*/
+   /*-----------------------------------------------*/
+:root {
+    --body2: #0055ff; 
+    --mouth2: #da0e0e;
+    --feather2: #ff7b00;
+    --beak2-top: #e9db1a;
+    --leg3: #ef8f0063;
+    --leg4: #ef8f00;
+    --body-leg3: #e3edf7;
+    --body-leg4: #e3edf7;
+
+    --body2: #3e48ff; 
+    --mouth2: #ae2727;
+    --feather2: #cfad4f;
+    --beak2-top: #e9db1a;
+    --leg3: #ef8f00;
+    --leg4: #ef8f00;
+    --body-leg3: #e3edf7;
+    --body-leg4: #e3edf7;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.body2 {
+    background: var(--body-color);
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+ .body2,  .mouth2,  .feather2,  .tail2, .beak2, .mouth2::before, .mouth2::after, .leg3, .leg3::after, .leg3::before,.leg4, .leg4::after, .leg4::before {
+    position: absolute;
+}
+ .body2,  .mouth2, .feather2, .beak2, .mouth2::before, .mouth2::after  {
+    border-radius: 50%;
+}
+
+.body2 {
+    top: 26px;
+    left: 50px;
+    height: 90px;
+    width: 100px;
+    transform: rotate(-17deg);
+    background: linear-gradient(to bottom, transparent 0%, transparent 20%, var(--body) 20%);
+    z-index: 2;
+}
+
+.mouth2 {    
+    background:  var(--mouth2);
+    top: 20px;
+    left: -175px;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-17deg);
+    z-index: 5;
+    animation: animate-mouth2 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-mouth2 {
+    100% {
+        left: 175px;
+    }
+}
+.mouth2::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: white;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.mouth2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 30px;
+    left: 55px;
+    animation: animate-eye2 1s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes animate-eye2 {
+    50% {
+        height: 5px;
+    }
+}
+
+
+.feather2 {
+    z-index: 4;
+    left: 44px;
+    top: -206px;
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(to bottom, transparent 0%, transparent 50%, var(--feather) 50%);
+    transform: rotate(-17deg);
+    animation: animate-feather2 1.5s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes animate-feather2 {
+    100% {
+        top: -6px;
+    }
+}
+
+.tail2 {
+    width: 75px;
+    height: 15px;
+    background-color: var(--mouth2);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    top: 92px;
+    left: 324px;
+    transform: rotate(-17deg);
+    z-index: 3;
+    animation: animate-tail2 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-tail2 {
+    100% {
+        left: -24px;
+    }
+}
+.beak2 {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(to bottom, var(--beak-top) 0%, var(--beak-top) 15%, transparent 15% );
+    left: 224px;
+    top: 240px;
+    z-index: -1;
+    transform: rotate(-17deg);
+    animation: animate-beak2 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-beak2 {
+    100% {
+        top: 40px;
+    }
+}
+.leg3 {
+    background: var(--leg3);
+    height: 50px;
+    width: 10px;
+    border-radius: 10px;
+    top: 515px;
+    left: 125px;
+    transform: rotate(-15deg);
+    z-index: 1;
+    animation: animate-leg3 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-leg3 {
+    100% {
+        top: 215px;
+    }
+}
+.leg3::before {
+    bottom: -8px;
+    content: "";
+    width: 5px;
+    height: 9px;
+    background: var(--leg3);
+    border-radius: 10px;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+.leg3::after {
+    top: -8px;
+    content: "";
+    width: 5px;
+    height: 9px;
+    background: var(--leg3);
+    border-radius: 10px;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+.leg4 {
+    background: var(--leg4);
+    height: 50px;
+    width: 10px;
+    border-radius: 10px;
+    top: 515px;
+    left: 125px;
+    transform: rotate(-15deg);
+    z-index: 1;
+    animation: animate-leg4 1.5s forwards;
+    animation-delay: 2s;
+}
+@keyframes animate-leg4 {
+    100% {
+        top: 215px;
+    }
+}
+.leg4::before {
+    bottom: 20px;
+    content: "";
+    width: 5px;
+    height: 9px;
+    background: var(--leg4);
+    border-radius: 10px;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+.leg4::after {
+    top: -8px;
+    content: "";
+    width: 5px;
+    height: 9px;
+    background: var(--leg4);
+    border-radius: 10px;
+    transform: rotate(-15deg);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <div class="body">
+            </div>
+            <div class="mouth">
+            </div>
+            <div class="beak">
+            </div>
+            <div class="feather">
+            </div>
+            <div class="tail">
+            </div>
+            <div class="leg">
+            </div>
+            <div class="leg2">
+            </div>
+        </div>
+        <div class="container">
+            <div class="body">
+            </div>
+            <div class="mouth">
+            </div>
+            <div class="beak">
+            </div>
+            <div class="feather">
+            </div>
+            <div class="tail">
+            </div>
+            <div class="leg">
+            </div>
+            <div class="leg2">
+            </div>
+        </div>
+        <div class="container2">
+            <div class="body2">
+            </div>
+            <div class="mouth2">
+            </div>
+            <div class="beak2">
+            </div>
+            <div class="feather2">
+            </div>
+            <div class="tail2">
+            </div>
+            <div class="leg3">
+            </div>
+            <div class="leg4">
+            </div>
+        </div>
+        <div class="container2">
+            <div class="body2">
+            </div>
+            <div class="mouth2">
+            </div>
+            <div class="beak2">
+            </div>
+            <div class="feather2">
+            </div>
+            <div class="tail2">
+            </div>
+            <div class="leg3">
+            </div>
+            <div class="leg4">
+            </div>
+        </div>
+    
+</body>
+</html>

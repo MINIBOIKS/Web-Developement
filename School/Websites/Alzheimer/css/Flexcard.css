@@ -1,0 +1,85 @@
+.card-container {
+    height: 50vh;
+    display: flex;
+     gap: 40px;
+     justify-content: center;
+     align-items: center;
+ 
+      flex-wrap: wrap;
+     /*margin-top: 50px;*/
+     margin-bottom: 10px;
+     /* background-color: #000;*/
+ 
+ }
+ 
+ .card {
+     width: 250px;
+     height: auto;
+     background: rgb(255, 255, 255);
+     
+     border-radius: 15px;
+     box-shadow: 4px 3px 6px 0px rgba(11,53,127,0.65);
+ }
+ .card .cardhead {
+     background: rgb(64, 82, 246);
+     border-radius: 0px 25px;
+     padding:15px;
+ }
+ 
+ 
+ .card .carddbody {
+    padding: 25px;
+ }
+ .card .cardhead .card-image {
+     height: 120px;
+     width: 120px;
+     
+     border: 5px double rgb(64 82 246);
+     border-radius: 50%;
+     background-position: center;
+     background-size: cover;
+     margin: auto;
+ 
+ }
+ 
+ .card .card-title {
+     padding: 20px 10px;
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     text-align: center;
+     color: rgb(30, 144, 255);
+ }
+ 
+ .card:nth-child(1) .card-image {
+     background-image: url(../images/DoctorK.jpg);
+ }
+ 
+ .card:nth-child(2) .card-image {
+     background-image: url(../images/ladyDoctor.png);
+ }
+ 
+ .card:nth-child(3) .card-image {
+     background-image: url(../images/Doctor.jpg);
+ }
+ 
+ .card:hover {
+     /*background: #f7c8df;*/
+     color: rgb(0, 0, 0);
+     box-shadow: 0px 0px 11px 5px rgb(137, 137, 137);
+ }
+ 
+ .card .card-text {
+     line-height: 20px;
+ 
+ }
+ 
+ .card .bottom{
+     padding-top: 15px;
+     display: flex;
+     justify-content: space-around;
+ }
+ .card .bottom .icon{
+    color: rgb(30, 144, 255);
+    font-size: 20px;
+    cursor:pointer;
+ }

@@ -1,0 +1,48 @@
+.zigzag-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.zigzag-navbar ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.zigzag-navbar ul li a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 1;
+}
+
+.zigzag-navbar ul li:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f1f1f1;
+    z-index: 2;
+}
+
+.zigzag-navbar ul li:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    z-index: 3;
+}

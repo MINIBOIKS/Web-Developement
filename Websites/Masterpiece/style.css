@@ -1,0 +1,77 @@
+* {
+    text-decoration: none;
+    list-style: none;
+}
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(24, 0, 230, 1) 0%, rgba(227, 1, 205, 1) 100%);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+  }
+  
+  .home-background {
+    background-color: #00b3ff;
+    color: rgb(255, 255, 255);
+  }
+
+  .box .boxImg{
+    background-image: url(4.webp);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+button {
+    margin: 20px 10px;
+    background: linear-gradient(90deg, rgba(24, 0, 230, 1) 0%, rgba(227, 1, 205, 1) 100%);
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   
+}
+
+button:hover {
+    background: rgb(24, 0, 230);
+    background: rgb(230, 0, 0);
+    background: linear-gradient(90deg, rgba(227, 1, 205, 1) 0%, rgba(24, 0, 230, 1)100%) 
+    
+}
+
+.a {
+    font-size: 20px;
+    color: #f4f4f0;
+   
+}
+.a:hover{
+    color: rgb(238, 255, 0);
+    font-weight: bolder;
+    
+}

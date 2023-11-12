@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alzheimer's</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            width: 100%;
+            background: #222;
+        }
+
+        .logo,
+        li,
+        a,
+        button {
+            font-size: 13px;
+            color: #edf0f1;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-family: "Montserrat";
+        }
+
+        .logo {
+            margin-right: auto;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .logo::first-letter {
+            font-family: Sriracha;
+            font-size: 70px;
+            color: rgb(255, 0, 0);
+            font-weight: bold;
+        }
+
+        .nav_links li {
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        .nav_links li a {
+            transition: all 0.3s ease;
+        }
+
+        .nav_links li a:hover {
+            color: #a90000;
+            font-weight: bold;
+        }
+
+        button {
+            margin: 20px 10px;
+            background: rgb(255, 0, 0);
+            outline: none;
+            border: none;
+            border-radius: 50px;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: #a90000;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 50%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-right: auto;
+            transform: skew(-25deg);
+            animation: change 10s infinite;
+        }
+
+        .container div {
+            width: 25%;
+            height: 80%;
+            box-shadow: 6px 0 3px #111111c7;
+        }
+
+        .container div:nth-of-type(1) {
+            background: url(./Images/1.png);
+            background-size: cover;
+            z-index: 2;
+        }
+
+        .container div:nth-of-type(2) {
+            background: url(./Images/2.png);
+            background-size: cover;
+            z-index: 1;
+            transform: scale(1.1);
+        }
+
+        .container div:nth-of-type(3) {
+            background: url(./Images/3.png);
+            background-size: cover;
+            z-index: 0;
+            transform: scale(1.2);
+        }
+
+        @keyframes change {
+            from {
+                filter: none;
+            }
+
+            50% {
+                filter: saturate(4);
+            }
+
+            to {
+                filter: none;
+            }
+        }
+
+        .content {
+            width: 30%;
+            height: 400px;
+            color: white;
+            margin-right: auto;
+        }
+
+        .content strong {
+            font-family: "Monsterat";
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        .content p {
+            width: 400px;
+            font-style: italic;
+            font-size: .75rem;
+            font-weight: lighter;
+            font-family: "Segoe UI";
+            color: #bbb;
+        }
+
+        .o-link {
+            width: 500px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 10px;
+            color: white;
+            font-size: 20px;
+            font-family: "Siracha";
+            left: 60%;
+        }
+
+        .o-link a img {
+            width: 50px;
+            transition: all .4s ease-in-out;
+        }
+
+        .o-link a img:hover {
+            width: 70px;
+            transform: translate(-10px);
+        }
+
+        h1,
+        p {
+            color: #edf0f1;
+            text-align: left;
+        }
+
+        h1 {
+            color: rgb(230, 87, 87);
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        h2 {
+            color: rgb(230, 87, 87);
+            text-decoration: underline;
+        }
+
+        img {
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Alzheimer's</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./Causes.html">Causes</a></li>
+                <li><a href="./Symptoms.html">Symptoms</a></li>
+                <li><a href="./OtherInfo.html">Other Information</a></li>
+                <li><a href="./Treatment.html">Treatment Options</a></li>
+            </ul>
+        </nav>
+        <button><a href="">Live</a></button>
+    </header>
+    <br><br>
+    <H1>Causes</H1>
+    <p>Alzheimers is a disease that usually affects people 65 and older. Some Nicknames that are given to this disease
+        are Ollie, and Old Timers Disease.</p>
+    <br>
+    <h2> How does Alzheimer's enter the body?</h2><br>
+    <p>
+        Alzheimer's is created when an unusual amount of protein <br> builds up around the brain cells. There are two
+        proteins that are called, <br> amyloid and tau. Amyloid creates plaques <br> around the cell which disturbs the
+        cell's
+        functions. Tau makes tangles in the brain. <br> <br></p>
+
+    <h2>How does Alzheimer's attack the organs?</h2><br>
+    <p>Alzheimer's causes important organs to shut down. <br> This causes people to lose their ability to move <br> and
+        do
+        things that people would normally do. <br> For example, eating, drinking, etc. As time goes on <br> they lose
+        their
+        ability to do everything. They can’t walk, talk, or move.</p> <br> <br>
+
+    <h2>Where in the world does Alzheimer's strike?</h2><br>
+    <p> According to google, Alzheimer's is most common in Western <br> Europe and a little bit of North America, but
+        anyone
+        can get it. <br> People who are 65 years or older are usually affected with this disease. 
+    </p>
+    <br><br>
+    <img src="./Images/Country.png" alt="">
+
+    <br><br>
+
+<h2>Why does Alzheimer's mostly affect this part of the world?</h2>
+<p>Alzheimer's usually affects people that don't have much contact with bacteria <br>
+     or other viruses because those peoples immune system would not develop. This can lead to dementia.  <br>
+      This might mean that Western Europe may not have contact with as many viruses or br bacteria <br>
+       other places/countries have. </p>
+
+
+</body>
+
+</html>

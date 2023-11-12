@@ -1,0 +1,23 @@
+h1{
+  color: blueviolet ;
+}
+
+.heading{
+  color: black;
+}
+
+#head1{
+  color: red;
+}
+
+.seconddiv p{
+  background-color: rgba(9, 178, 178, 0.729);
+  color: aliceblue;
+}
+
+.firstdiv > p{
+  background-color: blueviolet;
+  color: white;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

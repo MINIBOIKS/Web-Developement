@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:blue;
+        }
+
+        .second{
+            color:blueviolet;
+        }
+
+        #third{
+            color: rgb(36, 72, 1);
+        }
+    </style>
+</head>
+<body>
+   <p>First Paragraph</p>
+   <p class="second">Second paragraph</p>
+   <p id="third">Third Paragraph</p>
+   <script>
+    document.getElementById("third").innerText="Hello World";
+    document.getElementsByClassName("second").innerText="Toronto";
+   </script> 
+</body>
+</html>

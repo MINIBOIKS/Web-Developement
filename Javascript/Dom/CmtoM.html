@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p>Type a value in the Feet field to convert the value to Meters:</p>
+
+<p>
+  <label>Cm</label>
+  <input id="inputcm" type="number" placeholder="cm" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meters: <span id="outputMeters"></span></p>
+<body>
+    <script>
+        function LengthConverter(valNum) {
+          document.getElementById("outputMeters").innerHTML=valNum/100;
+        }
+        </script>
+</body>
+</html>

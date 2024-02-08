@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Class</title>
+    <style>
+        /* Styles for the added class */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="myElement">This is a div element</div>
+    <button id="myButton" onclick="addClass()">Add Class</button>
+    <script>
+        function addClass(){
+            //Select the element to which the class will be added
+            const myElement = document.getElementById("myElement");
+
+            //Add a class to the selected element
+            myElement.classList.add("highlight")
+        }
+    </script>
+</body>
+</html>

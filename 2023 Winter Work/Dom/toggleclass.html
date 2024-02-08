@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Styles for the added and removed classes */
+    .highlight {
+        background-color: yellow;
+        font-weight: bold;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+</style>
+<body>
+   <p id="myParagraph">This is paragraph</p>
+   <button onclick="togglehighlightAndItalic()">
+    Toggle Highlight and Italicize 
+</button>
+<script>
+    function togglehighlightAndItalic() {
+        const paragraph = document.getElementById("myParagraph");
+
+        // Toggle classes for the paragraph
+        if (paragraph) {
+            paragraph.classList.toggle("highlight")
+            paragraph.classList.toggle("italic")
+        } else {
+            console.log("Paragraph not found")
+        }
+    }
+</script>
+</body>
+</html>

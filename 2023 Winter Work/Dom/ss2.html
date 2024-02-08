@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let numbers = [10, 20, 30, 40, 50];
+        let sum = 0;
+        let largestNum = 0;
+        console.log(numbers.length)
+        for (let i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+            if (numbers[i] > largestNum) {
+                largestNum = numbers[i];
+            }
+        }
+
+        console.log(largestNum)
+        console.log(sum)
+
+
+    </script> 
+</body>
+</html>

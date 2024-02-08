@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnign classList.add & classList.remove</title>
+    <style>
+        /* Styles for the added and removed classes */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p id="myParagraph">This is a paragraph</p>
+    <button onclick="highlightAndItalic()">Highlight and Italic</button>
+    <button onclick="removeHighlightAndItalic()"> Remove Highlight and Italic</button>
+    <script>
+        function highlightAndItalic() {
+            const paragraph = document.getElementById('myParagraph'); 
+
+            // Add classes to the paragraph
+            if (paragraph) {
+                paragraph.classList.add('highlight','italic');
+            } else{
+                console.log('Paragragh not found')
+            }
+        }
+        function removeHighlightAndItalic() {
+            const paragraph = document.getElementById('myParagraph');
+
+            // Remove classes from the paragraph
+            if(paragraph){
+                paragraph.classList.remove('highlight','italic');
+            } else {
+                console.log('Paragraph not found')
+            }
+        }
+    </script>
+</body>
+</html>

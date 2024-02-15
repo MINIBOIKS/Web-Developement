@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     // Define the size of the table (e.g., 5x5, 10x10, etc)
+const numRows =  5;
+const numCols = 5;
+
+// Start an empty 2D array
+const multiplicationTable = [];
+
+// Add numbers to the chart
+for (let i = 1; i <= numRows; i++)  { //Outer loop rotates through rows (1 to numRows e.g. 1-10)
+    const row = [];
+    for (let j = 1; j <= numCols; j++) { //Inner loop rotates through columns (1 to numCols e.g. 1-10)
+        row.push(i * j);
+    }
+    multiplicationTable.push(row);
+}
+
+// Display the multiplication table
+for (const row of multiplicationTable) {
+    console.log(row.join("\t")); // Separate elements with tabs for a neat display
+}
+//Inspect and check console for the chart
+
+    </script>
+</body>
+</html>

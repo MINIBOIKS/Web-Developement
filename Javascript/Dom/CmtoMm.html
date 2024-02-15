@@ -6,15 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-  <p>Type a value in the cm field to convert the value to Meters:</p>
+  <p>Type a value in the cm field to convert the value to Millimetres:</p>
   <p>
   <label>Cm</label>
   <input id="inputcm" type="number" placeholder="cm" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
 </p>
-<p>Meters: <span id="outputMeters"></span></p>
+<p>Millimetres: <span id="outputMeters"></span></p>
     <script>
         function LengthConverter(valNum) {
-          document.getElementById("outputMeters").innerHTML=valNum/100;
+          document.getElementById("outputMeters").innerHTML=valNum*10;
         }
         </script>
 </body>

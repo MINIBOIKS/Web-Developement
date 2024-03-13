@@ -3,9 +3,13 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #545454;
-    
 }
+
+body{
+    background-image: url('BGimg.png');
+}
+
+
 
 ul{
     
@@ -13,7 +17,9 @@ ul{
 }
 
 .nav{
-    float: right;  
+    float: right; 
+    
+    background-color: #545454;
 }
   
   li:last-child {
@@ -56,13 +62,18 @@ ul{
   }
 
   .btn{
-    background-color: #87838B;
-    border-radius: 0;
-    
+    background-color: #c97215;
   }
 
   .btn:hover{
-    background-color: #383838;
+    background-color: #0fa5c3;
+    transition: 0.5s;
+  }
+
+  h4{
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 12;
   }
 
   

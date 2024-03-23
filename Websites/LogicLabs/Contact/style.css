@@ -1,0 +1,148 @@
+.box{
+    border: black;
+    color: dimgray;
+    size: 50px;
+    display: table;
+}
+*{
+   box-sizing: border-box;
+}
+.wrapper{
+   width: 800px;
+   margin: 5% auto;
+}
+.formarea{
+   display: flex;
+   background: rgba(0, 0, 0, 0.8);
+   border-radius: 25px;
+   padding: 1.9em;
+}
+.msgarea{
+   display: flex;
+   flex-direction: column;
+   order: 2;
+}
+.msgarea > textarea{
+   flex: 1;
+   min-width: 18em;
+   background: transparent;
+   color: #fff;
+   padding: 15px;
+}
+.detailsarea{
+   flex: 1;
+   order: 1;
+   margin-right: 2em;
+}
+.detailsarea input{
+   width: 100%;
+   background: transparent;
+   color: #fff;
+   border-radius: 40px;
+}
+.detailsarea input,
+.detailsarea button{
+   padding: 1em;
+   margin-bottom: 1em;
+} 
+.detailsarea button{
+   background: gray;
+   color: #fff;
+   border: 0;
+   padding: 15px 50px;
+   border-radius: 40px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+label{
+   color: #fff;
+   text-transform: uppercase;
+   line-height: 40px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+body{
+   background-image: url('../Images/BGimg.png');
+}
+
+
+
+ul{
+   
+   font-family: "Inter", sans-serif;
+}
+
+.nav{
+   float: right; 
+   
+   background-color: #545454;
+}
+ 
+ li:last-child {
+   border-right: none;
+ }
+ 
+ li a {
+   display: block;
+   color: #cbcbcb;
+   text-align: center;
+   padding: 35px 16px;
+   text-decoration: none;
+   
+ }
+ 
+ li a:hover:not(.active) {
+   color: #f89203;
+ }
+ 
+
+
+ .flex-container {
+   display: flex;
+   flex-wrap: wrap;
+   font-size: 30px;
+   text-align: center;
+ }
+ 
+ .flex-item-left {
+   background-color: #201e21;
+   padding: 400px;
+   flex: 0%;
+   color: white;
+   font-family: "Inter", sans-serif;
+   font-weight:510;
+   font-size:100px;
+   padding-left: 100px;
+   text-align: left;
+   padding-top: 100px;
+ }
+
+ .btn{
+   background-color: #c97215;
+ }
+
+ .btn:hover{
+   background-color: #0fa5c3;
+   transition: 0.5s;
+ }
+
+ h4{
+   font-family: "Inter", sans-serif;
+   font-weight: normal;
+   font-size: 12;
+ }
+
+ h1 {
+   font-family: "Cookie", cursive;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 50px;
+   color: #fff;
+ }

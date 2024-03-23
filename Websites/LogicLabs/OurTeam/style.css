@@ -1,0 +1,156 @@
+/* menu bar */
+
+body{
+    background-image: url('../Images/BGimg.png');
+}
+
+
+
+ul{
+    
+    font-family: "Inter", sans-serif;
+    float: right; 
+    border-radius: 100%;
+    background-color: #2c2c2c;
+}
+
+
+
+.nav{
+    float: right; 
+    border-radius: 10%;
+    background-color: #2c2c2c;
+}
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: #cbcbcb;
+    text-align: center;
+    padding: 35px 16px;
+    text-decoration: none;
+    
+  }
+  
+  li a:hover:not(.active) {
+    color: #f89203;
+  }
+  
+ 
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;  
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: #8b8b8b;
+    padding: 400px;
+    flex: 0%;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight:510;
+    font-size:100px;
+    padding-left: 100px;
+    text-align: left;
+    padding-top: 100px;
+  }
+
+  .btn{
+    background-color: #ff6f00;
+    border-radius: 10%;
+  }
+
+  .btn:hover{
+    background-color: #00d5ff;
+    transition: 0.5s;
+  }
+
+/*header*/
+
+.header {
+    background-color: #6d6d6d;
+    padding: 20px;
+    display: flex; /* Arrange logo and title side-by-side */
+    align-items: center; /* Align logo and title vertically */
+  }
+
+  
+
+/* about me */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.card-container {
+    height: 100vh;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+
+     flex-wrap: wrap;
+    margin-top: 50px;
+    /* background-color: #000;*/
+
+}
+
+.card {
+    width:250px;
+    height: auto;
+    background: #d0d0d0;
+    padding: 25px;
+    border-radius: 15px;
+}
+ 
+.card .card-image {
+    height: 150px;
+    width: 150px;
+    border: 5px double #022a3c;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    margin: auto;
+
+}
+
+.card .card-title {
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 0px 2px #262654;
+    text-align: center;
+}
+
+.card:nth-child(1) .card-image {
+    background-image: url(../Images/John_Doe.avif);
+}
+
+.card:nth-child(2) .card-image {
+    background-image: url(../Images/Kate_Harrington.avif);
+}
+
+.card:nth-child(3) .card-image {
+    background-image: url(../Images/Mike_Ross.avif);
+}
+
+.card:hover {
+    background: #8c8c8c;
+    color: #fff;
+    box-shadow: 0px 0px 11px 5px #000;
+}
+
+.card .card-text {
+    line-height: 20px;
+
+}

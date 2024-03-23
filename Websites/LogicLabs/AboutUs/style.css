@@ -1,0 +1,108 @@
+body{
+    background-image: url('../Images/BGimg.png');
+    height: 1350px;
+    }  
+    ul{
+    font-family: "Inter", sans-serif;
+    }
+    .nav{
+    float: right; 
+    background-color: #545454;
+    }
+    li:last-child {
+    border-right: none;
+    }
+    li a {
+    display: block;
+    color: #cbcbcb;
+    text-align: center;
+    padding: 35px 16px;
+    text-decoration: none;
+    }
+    li a:hover:not(.active) {
+    color: #f89203;
+    }
+    .btn{
+    background-color: #c97215;
+    }
+    .btn:hover{
+    background-color: #0fa5c3;
+    transition: 0.5s;
+    }
+    h2{
+        text-align: center;
+        font-family: 'Michroma';
+        font-weight: 400;
+        font-size: 75px;
+        color: rgba(38, 63, 65, 1);
+        padding-bottom: 200px;
+    }
+    h3{
+        text-align: center;
+        font-family:'Hurricane';
+        font-weight: 700;
+        font-style: normal;
+        font-size: 75px;
+        color: rgba(38, 63, 65, 1) ;
+    }
+    .box{
+        width: 95vw;
+        height: 20vh;
+        background-color: rgba(38, 63, 65, 0.6);
+        border: 0;
+        border-radius: 30px;
+        margin: auto;
+    }
+    .box p{
+    font-family: 'Kode Mono';
+    color: #faf9f8;
+    text-align: center;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+        
+    }
+    .img1-shadow{
+    position: absolute;
+    top: 129vh;
+    left: 25vw;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #88838b;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    }
+    .img1{
+    top: 124vh;
+    left: 20vw;
+    position: absolute;
+    display: inline-block;
+    border-radius: 25px;
+    background: url(../Images/computer-pic.png) center;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    }
+    .img2-shadow{
+    position: absolute;
+    left: 70vw;
+    top: 129vh;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #545454;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    }
+    .img2{
+    display: inline-block;
+    position: absolute;
+    left: 65vw;
+    top: 124vh;
+    border-radius: 50%;
+    background: url(../Images/code-pic.png) center;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    }

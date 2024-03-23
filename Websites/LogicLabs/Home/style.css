@@ -43,14 +43,14 @@ ul{
 
   .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     font-size: 30px;
     text-align: center;
   }
   
   .flex-item-left {
     background-color: #201e21;
-    padding: 400px;
+    padding: 400px; 
     flex: 0%;
     color: white;
     font-family: "Inter", sans-serif;
@@ -73,7 +73,7 @@ ul{
   h4{
     font-family: "Inter", sans-serif;
     font-weight: normal;
-    font-size: 12;
+    font-size: xx-small; 
   }
 
   

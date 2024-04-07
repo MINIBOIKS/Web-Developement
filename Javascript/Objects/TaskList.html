@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    //Define todoList = {
-          
-    }
+
+    <script>
+        let todolist = {
+            tasks: [],
+
+            addTask: function (taskName) {
+                let task = {
+                    name: taskName, completed: false
+                };
+                this.tasks.push(task);
+                console.log('Task "${taskName}" added.');
+            },
+            addTask: function (taskName) {
+            },
+
+            markAsDone: function (taskIndex) {
+                if
+                    (taskIndex >= 0 && taskIndex < this.tasks.length) {
+                    this.tasks[taskIndex].completed = true;
+                    console.log(`Task "${this.tasks[taskIndex].name}"marked as done.`);
+                } else {
+                    console.log('Invalid task index.');  
+                }
+            },
+
+            deleteTask: function (taskIndex) {
+                if (taskIndex >= 0 && taskIndex < this.tasks.length) {
+                    let deletedTask = this.tasks.splice(taskIndex, 1);
+                    console.log(' Task "${deletedTask[0].name}" deleted.');
+                } else {
+                    console.log('Invalid task index.');
+                }
+            },
+
+            listTasks: function () {
+                console.log(`Tasks: `);
+                this.tasks.forEach((task, index) => {
+                    console.log(`${index + 1}. ${task.name} - ${task.completed ? 'Done' : 'Pending'}`);
+                });
+            }
+        };
+
+            todolist.addTask('Buy groceries');
+            todolist.addTask('Do laundry');
+            todolist.listTasks();
+            todolist.markAsDone(0);
+            todolist.listTasks();
+            todolist.deleteTask(1);
+            todolist.listTasks();
+
+    </script>
+
 </body>
+
 </html>

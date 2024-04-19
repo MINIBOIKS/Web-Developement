@@ -1,0 +1,17 @@
+.animated-text {
+    /* Initial styles for your text */
+    font-size: 20px;
+    color: black;
+    cursor: pointer;  /* Optional: Show a pointer on hover */
+  }
+  
+  @keyframes easeInOutAnimation {
+    from { opacity: 0; transform: scale(0.9); }  /* Start slightly shrunk */
+    to { opacity: 1; transform: scale(1); }  /* End at normal scale */
+  }
+  
+  .animated-text.animate {
+    animation: easeInOutAnimation 0.5s ease-in-out;  /* Adjust duration as needed */
+    animation-fill-mode: forwards;  /* Keep animation state after it ends */
+  }
+  

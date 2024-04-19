@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: rgba(107, 176, 122,0.8);
+    font-weight: bolder;
+    animation: anim 2s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-size: x-large;
+}
+
+p{
+    color: greenyellow;
+    margin-top: -40px;
+   
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; 
+    color: #fff;
+    background-color: rgb(56, 160, 80);
+    font-size: medium;
+}
+
+
+button:hover {
+    background-color: rgb(38, 77, 33);
+    transition: ease-in-out 0.5s;
+}
+
+.flex-container{
+    background-image: url(./BGimg.png);
+    background-repeat: no-repeat;
+    padding: 500px 10px;
+    background-size: cover;
+    
+}
+

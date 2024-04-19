@@ -1,0 +1,59 @@
+.car {
+    width: 300px;
+    height: 150px;
+    background-color: #ccc;
+    margin: 50px auto;
+    position: relative; /* Needed for relative positioning of wheels */
+  }
+  
+  .body {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: #666;
+  }
+  
+  .wheel {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute; /* Positions wheels within the car */
+    bottom: 20px; /* Places wheels at the bottom of the car */
+  }
+  
+  .left-wheel {
+    left: 30px; /* Positions left wheel */
+  }
+  
+  .right-wheel {
+    right: 30px; /* Positions right wheel */
+  }
+  
+  .headlight {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute; /* Positions headlights within the car */
+    top: 20px; /* Places headlights at the top of the car */
+  }
+  
+  .left-headlight {
+    left: 20px; /* Positions left headlight */
+  }
+  
+  .right-headlight {
+    right: 20px; /* Positions right headlight */
+  }
+  
+  /* Animation for spinning wheels */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .wheel {
+    animation: spin 2s linear infinite; /* Applies spin animation to wheels */
+  }
+  
